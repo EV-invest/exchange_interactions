@@ -881,12 +881,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb"
 dependencies = [
  "libc",
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
 name = "exchange_interactions"
-version = "0.19.2"
+version = "0.20.0"
 dependencies = [
  "color-eyre",
  "exchange_interactions_adapters",
@@ -963,7 +963,7 @@ dependencies = [
 
 [[package]]
 name = "exchange_interactions_methods"
-version = "0.2.2"
+version = "0.3.0"
 dependencies = [
  "ahash 0.8.12",
  "arrayvec",
@@ -2537,7 +2537,7 @@ dependencies = [
  "once_cell",
  "socket2",
  "tracing",
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -2907,7 +2907,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys",
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -2964,7 +2964,7 @@ dependencies = [
  "security-framework",
  "security-framework-sys",
  "webpki-root-certs",
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -3484,7 +3484,7 @@ dependencies = [
  "getrandom 0.4.3",
  "once_cell",
  "rustix",
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -3862,7 +3862,7 @@ dependencies = [
 
 [[package]]
 name = "trading_data_core"
-version = "0.3.0"
+version = "0.5.1"
 dependencies = [
  "arrayvec",
  "derive-new",
@@ -3878,7 +3878,7 @@ dependencies = [
 
 [[package]]
 name = "trading_data_dag"
-version = "0.3.0"
+version = "0.5.1"
 dependencies = [
  "trading_data_expr",
  "trading_data_macros",
@@ -3887,14 +3887,14 @@ dependencies = [
 
 [[package]]
 name = "trading_data_expr"
-version = "0.3.0"
+version = "0.5.1"
 dependencies = [
  "libm",
 ]
 
 [[package]]
 name = "trading_data_macros"
-version = "0.2.0"
+version = "0.5.1"
 dependencies = [
  "proc-macro-crate",
  "proc-macro2",
@@ -4047,7 +4047,7 @@ dependencies = [
 
 [[package]]
 name = "v_utils"
-version = "2.17.3"
+version = "2.17.8"
 dependencies = [
  "ahash 0.8.12",
  "bon",
@@ -4087,7 +4087,7 @@ dependencies = [
 
 [[package]]
 name = "v_utils_macros"
-version = "2.12.4"
+version = "2.12.5"
 dependencies = [
  "eyre",
  "heck",
@@ -4267,7 +4267,7 @@ version = "0.1.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c2a7b1c03c876122aa43f3020e6c3c3ee5c05081c9a00739faf7503aeba10d22"
 dependencies = [
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]

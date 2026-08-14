@@ -73,7 +73,7 @@ tokio-tungstenite = "0.30"
 
 exchange_interactions_adapters = { version = "0.19.2", path = "exchange_interactions_adapters" }
 exchange_interactions_api_generics = { version = "0.21.2", path = "exchange_interactions_api_generics" }
-exchange_interactions_methods = { version = "0.2.2", path = "exchange_interactions_methods", default-features = false }
+exchange_interactions_methods = { version = "0.3.0", path = "exchange_interactions_methods", default-features = false }
 
 [patch.crates-io]
 trading_data_core = { path = "../trading_data/trading_data_core" }

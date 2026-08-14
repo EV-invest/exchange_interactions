@@ -105,7 +105,7 @@ pub mod futures {
 	use jiff::Timestamp;
 	use serde::{Deserialize, Serialize};
 	use serde_json::json;
-	use trading_data_core::{Kline, Ohlc, Pair};
+	use trading_data_core::{Kline, Ohlc, Pair, Precision};
 
 	use crate::{
 		ExchangeResult, RequestRange, Symbol,
@@ -197,7 +197,9 @@ pub mod futures {
 		_recv_window: Option<std::time::Duration>,
 	) -> ExchangeResult<Klines> {
 		// Kucoin futures symbol format: XBTUSDTM
-		let base = to_kucoin_futures_base(symbol.pair.base().as_ref());
+		// `Pair::base` hands back an owned `Asset`, so it needs a binding to outlive the borrow.
+		let base_asset = symbol.pair.base();
+		let base = to_kucoin_futures_base(base_asset.as_ref());
 		let kucoin_symbol = format!("{base}{}M", symbol.pair.quote());
 
 		// granularity is in minutes for futures API
